@@ -8,7 +8,8 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "VEO S.A",
-  description: "Modern & Minimal JS Mastery Portfolio",
+  description:
+    "VEO se especializa en la verificación de obras externas, garantizando el cumplimiento de estándares de calidad y seguridad. Aseguramos que tu proyecto esté bien ejecutado y conforme a las normativas vigentes.",
 };
 
 export default function RootLayout({
