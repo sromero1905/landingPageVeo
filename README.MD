@@ -30,8 +30,6 @@
 ## **Tecnologías Utilizadas**
 
 - **Frontend:** React, Redux
-- **Backend:** Node.js, Express
-- **Base de Datos:** PostgreSQL
 - **Estilos:** CSS-in-JS / TailwindCSS
 - **Herramientas:** Webpack, Babel, ESLint
 
