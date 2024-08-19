@@ -28,21 +28,21 @@ const Hero = () => {
         {" "}
         {/* Increased mt-40 for more space */}
         <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-          <p className="uppercase tracking-widest text-xs text-center text-blue-100 max-w-80">
+          <p className="uppercase tracking-widest text-xs md:text-sm lg:text-base text-center text-blue-100 max-w-80">
             Verificador De Obra Externa
           </p>
 
           <TextGenerateEffect
             words="Transforming Concepts into Seamless User Experiences"
-            className="text-center text-[40px] md:text-5xl lg:text-6xl"
+            className="text-center text-[32px] md:text-4xl lg:text-5xl"
           />
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
+          <p className="text-center md:tracking-wider mb-4 text-sm md:text-base lg:text-xl">
             Asegurando Calidad y Seguridad en Cada Proyecto
           </p>
 
           <a href="#about">
             <MagicButton
-              title="Show my work"
+              title="Show our work"
               icon={<FaLocationArrow />}
               position="right"
             />

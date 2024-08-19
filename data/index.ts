@@ -1,9 +1,4 @@
-export const navItems = [
-  { name: "About", link: "#about" },
-  { name: "Work", link: "#work" },
-  { name: "Testimonials", link: "#testimonials" },
-  { name: "Contact", link: "#contact" },
-];
+
 
 export const gridItems = [
   {
@@ -13,7 +8,7 @@ export const gridItems = [
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
-    img: "/buildings.jpg",
+    img: "/verificacion.jpeg",
     spareImg: "",
   },
   {
@@ -44,14 +39,12 @@ export const gridItems = [
     imgClassName: "",
     titleClassName: "justify-start",
     img: "/image.png",
-    spareImg: "/b4.svg",
   },
 
   {
     id: 5,
     title: "Inspección detallada de obras",
-    description:
-      "Verificamos cada etapa de tu proyecto.",
+    description: "Verificamos cada etapa de tu proyecto.",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
@@ -152,14 +145,14 @@ export const workExperience = [
     id: 2,
     title: "Inspección en Sitio",
     desc: "Realizamos visitas periódicas para verificar que la obra avance según el cronograma y especificaciones.",
-    className: "md:col-span-2", // change to md:col-span-2
+    className: "md:col-span-2",
     thumbnail: "/building-2-fill.svg",
   },
   {
     id: 3,
     title: "Control de Calidad Final",
     desc: "Evaluamos el acabado y funcionalidad de la obra antes de la entrega para garantizar el cumplimiento de los estándares.",
-    className: "md:col-span-2", // change to md:col-span-2
+    className: "md:col-span-2",
     thumbnail: "/ball-pen-fill.svg",
   },
   {
@@ -169,7 +162,22 @@ export const workExperience = [
     className: "md:col-span-2",
     thumbnail: "/git-repository-private-line.svg",
   },
+  {
+    id: 5,
+    title: "Registro de Ventas",
+    desc: "Mantenemos un registro detallado de todas las ventas realizadas, asegurando la transparencia y precisión en la documentación.",
+    className: "md:col-span-2",
+    thumbnail: "/macbook-fill.svg", 
+  },
+  {
+    id: 6,
+    title: "Adquisiciones",
+    desc: "Gestionamos las adquisiciones de materiales y servicios necesarios para el proyecto, garantizando la calidad y el cumplimiento de los requisitos.",
+    className: "md:col-span-2",
+    thumbnail: "/wallet-2-fill.svg", 
+  },
 ];
+
 
 export const socialMedia = [
   {

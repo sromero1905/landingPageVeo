@@ -1,56 +1,54 @@
-import { FaLocationArrow } from "react-icons/fa6";
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaLinkedinIn,
+  FaInstagram,
+} from "react-icons/fa";
 
-import { socialMedia } from "@/data";
-import MagicButton from "./MagicButton";
-
-const Footer = () => {
+export default function Footer() {
   return (
-    <footer className="w-full pt-20 pb-10" id="contact">
-      {/* background grid */}
-      <div className="w-full absolute left-0 -bottom-72 min-h-96">
-        <img
-          src="/footer-grid.svg"
-          alt="grid"
-          className="w-full h-full opacity-50 "
-        />
-      </div>
+    <footer className="w-full bg-black-900 text-gray-400 py-8 mt-12 mb-10 rounded-lg">
+      <div className="container mx-auto flex flex-col items-center justify-between px-4 sm:flex-row">
+        {/* Buttons */}
+        <div className="flex space-x-6 mb-4 sm:mb-0">
+          <a
+            href="#terms"
+            className="hover:text-gray-100 text-sm px-2 py-1 hover:underline hover:underline-offset-4 hover:decoration-gray-500 transition duration-300 ease-in-out"
+          >
+            Términos y Condiciones
+          </a>
+          <a
+            href="#privacy"
+            className="hover:text-gray-100 text-sm px-2 py-1 hover:underline hover:underline-offset-4 hover:decoration-gray-500 transition duration-300 ease-in-out"
+          >
+            Política de Privacidad
+          </a>
+        </div>
 
-      <div className="flex flex-col items-center">
-        <h1 className="heading lg:max-w-[45vw]">
-          Listo para llevar tu proyecto al siguiente nivel.{" "}
-          <span className="text-gray-400">Contáctanos</span> y juntos haremos
-          realidad tus ideas.
-        </h1>
-        <p className="text-white-200 md:mt-10 my-5 text-center">
-          Reach out to me today and let&apos;s discuss how I can help you
-          achieve your goals.
-        </p>
-        <a href="mailto:info@veo.com">
-          <MagicButton
-            title="Let's get in touch"
-            icon={<FaLocationArrow />}
-            position="right"
-          />
-        </a>
-      </div>
-      <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
-        <p className="md:text-base text-sm md:font-normal font-light">
-          Copyright © 2024 VEO S.A
-        </p>
-
-        <div className="flex items-center md:gap-3 gap-6">
-          {socialMedia.map((info) => (
-            <div
-              key={info.id}
-              className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
+        {/* Copyright */}
+        <div className="flex items-center space-x-2 justify-center w-full">
+          <p className="text-sm text-gray-500 mx-auto sm:ml-10">
+            Copyright &copy; 2024{" "}
+            <a
+              href="#"
+              className="hover:text-gray-100 transition duration-300 ease-in-out"
             >
-              <img src={info.img} alt="icons" width={20} height={20} />
-            </div>
-          ))}
+              Veo S.A
+            </a>
+          </p>
+        </div>
+
+        {/* Social Media Icons */}
+        <div className="flex space-x-6 mt-4">
+          <a
+            href="https://linkedin.com"
+            className="hover:text-gray-100 transition duration-500 ease-in-out"
+            aria-label="LinkedIn"
+          >
+            <FaLinkedinIn className="h-10 w-10 rounded-full border border-gray-700 p-2 hover:bg-gray-700" />
+          </a>
         </div>
       </div>
     </footer>
   );
-};
-
-export default Footer;
+}
