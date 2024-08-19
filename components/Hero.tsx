@@ -27,9 +27,9 @@ const Hero = () => {
       <div className="flex justify-center relative mt-40 z-10">
         {" "}
         {/* Increased mt-40 for more space */}
-        <div className="max-w-[89vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-          <p className="uppercase tracking-widest text-xs md:text-sm lg:text-base text-center text-blue-100 max-w-80">
-            Verificador De Obra Externa
+        <div className="max-w-[87vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
+          <p className="uppercase tracking-widest text-sm md:text-base lg:text-lg text-center text-blue-100 whitespace-nowrap">
+            Verificador Externa de Obra
           </p>
 
           <TextGenerateEffect
@@ -39,14 +39,6 @@ const Hero = () => {
           <p className="text-center md:tracking-wider mb-4 text-sm md:text-base lg:text-xl">
             Asegurando Calidad y Seguridad en Cada Proyecto
           </p>
-
-          <a href="#about">
-            <MagicButton
-              title="Show our work"
-              icon={<FaLocationArrow />}
-              position="right"
-            />
-          </a>
         </div>
       </div>
     </div>
