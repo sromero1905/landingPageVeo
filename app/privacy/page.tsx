@@ -3,14 +3,14 @@
 import { useRouter } from "next/navigation";
 import Footer from "@/components/Footer";
 
-const PrivacyPage = () => {
+const TermsPage = () => {
   const router = useRouter();
 
   return (
     <div className="min-h-screen flex flex-col bg-gray-900 text-gray-200">
       <header className="py-8 bg-gray-800 text-white shadow-md">
         <div className="container mx-auto flex justify-between items-center px-6">
-          <h1 className="text-3xl font-bold">Política de Privacidad</h1>
+          <h1 className="text-3xl font-bold">Términos y Condiciones</h1>
           <button
             onClick={() => router.back()}
             className="px-6 py-3 bg-gray-200 text-gray-800 rounded-lg hover:bg-gray-300 transition duration-300 ease-in-out shadow-md"
@@ -23,72 +23,76 @@ const PrivacyPage = () => {
       <main className="flex-grow container mx-auto px-6 py-12">
         <h2 className="text-2xl font-semibold mb-6">Introducción</h2>
         <p className="mb-6">
-          En Veo S.A., respetamos su privacidad y nos comprometemos a proteger
-          la información personal que recopilamos de nuestros usuarios. Esta
-          Política de Privacidad describe cómo recopilamos, usamos y protegemos
-          su información.
+          Estos Términos y Condiciones (&quot;Términos&quot;) describen las
+          reglas y regulaciones para el uso de nuestro sitio web y servicios
+          proporcionados por Veo S.A. Al acceder a este sitio web, usted acepta
+          estar sujeto a estos Términos. Si no está de acuerdo con alguno de los
+          términos aquí expuestos, le pedimos que no utilice nuestro sitio web.
+        </p>
+
+        <h2 className="text-2xl font-semibold mb-6">Uso del Sitio</h2>
+        <p className="mb-6">
+          Al utilizar este sitio web, usted acepta que lo hará únicamente con
+          fines legales y de acuerdo con todas las leyes y regulaciones
+          aplicables. No deberá utilizar el sitio para ningún propósito ilegal o
+          prohibido por estos Términos. Usted acepta que no intentará interferir
+          o interrumpir el funcionamiento del sitio web y que no cargará ni
+          transmitirá ningún material que sea dañino o que pueda afectar
+          negativamente la experiencia de otros usuarios.
+        </p>
+
+        <h2 className="text-2xl font-semibold mb-6">Registro de Usuario</h2>
+        <p className="mb-6">
+          En algunas secciones del sitio web, se le puede solicitar que se
+          registre y proporcione información personal. Usted acepta proporcionar
+          información precisa y completa y actualizarla cuando sea necesario
+          para mantener su exactitud. Es su responsabilidad mantener la
+          confidencialidad de su información de inicio de sesión y de las
+          actividades realizadas bajo su cuenta.
+        </p>
+
+        <h2 className="text-2xl font-semibold mb-6">Propiedad Intelectual</h2>
+        <p className="mb-6">
+          Todo el contenido del sitio web, incluyendo pero no limitado a textos,
+          gráficos, logotipos, íconos y software, es propiedad de Veo S.A. o de
+          sus proveedores de contenido y está protegido por leyes de propiedad
+          intelectual. Usted no puede reproducir, distribuir, modificar, mostrar
+          públicamente ni utilizar de ninguna otra manera el contenido del sitio
+          web sin nuestro permiso previo por escrito.
         </p>
 
         <h2 className="text-2xl font-semibold mb-6">
-          Información que Recopilamos
+          Modificaciones de los Términos
         </h2>
         <p className="mb-6">
-          Recopilamos información personal que usted nos proporciona al utilizar
-          nuestros servicios o interactuar con nosotros. Esto puede incluir su
-          nombre, dirección de correo electrónico, y otra información relevante.
-          También recopilamos datos sobre su interacción con nuestro sitio, como
-          su dirección IP y datos de navegación.
+          Podemos actualizar estos Términos de vez en cuando para reflejar
+          cambios en nuestras prácticas. Le notificaremos sobre cualquier cambio
+          importante y publicaremos la versión actualizada en nuestro sitio web.
         </p>
 
-        <h2 className="text-2xl font-semibold mb-6">Uso de la Información</h2>
+        <h2 className="text-2xl font-semibold mb-6">Enlaces a Terceros</h2>
         <p className="mb-6">
-          Utilizamos la información personal que recopilamos para ofrecerle
-          nuestros servicios, mejorar su experiencia con Veo S.A., y
-          comunicarnos con usted. Esto puede incluir el envío de actualizaciones
-          sobre nuestros servicios y otras comunicaciones relevantes.
+          Nuestro sitio web puede contener enlaces a sitios web de terceros que
+          no son operados ni controlados por nosotros. No asumimos ninguna
+          responsabilidad por el contenido, las políticas de privacidad o las
+          prácticas de estos sitios web de terceros. Le recomendamos que lea los
+          términos y condiciones y las políticas de privacidad de cualquier
+          sitio web de terceros que visite.
         </p>
 
-        <h2 className="text-2xl font-semibold mb-6">Protección de Datos</h2>
+        <h2 className="text-2xl font-semibold mb-6">Responsabilidad</h2>
         <p className="mb-6">
-          Implementamos medidas de seguridad adecuadas para proteger su
-          información personal contra accesos no autorizados y otros riesgos.
-          Sin embargo, dado que ningún método de transmisión por Internet o
-          almacenamiento electrónico es completamente seguro, no podemos
-          garantizar la seguridad absoluta de su información.
-        </p>
-
-        <h2 className="text-2xl font-semibold mb-6">Cookies</h2>
-        <p className="mb-6">
-          Utilizamos cookies para mejorar su experiencia en nuestro sitio web.
-          Las cookies son pequeños archivos de texto que se almacenan en su
-          dispositivo y nos ayudan a recordar sus preferencias. Puede configurar
-          su navegador para rechazar cookies, aunque esto puede afectar la
-          funcionalidad del sitio.
-        </p>
-
-        <h2 className="text-2xl font-semibold mb-6">
-          Derechos de los Usuarios
-        </h2>
-        <p className="mb-6">
-          Tiene el derecho de acceder, corregir o eliminar la información
-          personal que poseemos sobre usted. Si desea ejercer estos derechos,
-          por favor contáctenos utilizando el correo electrónico proporcionado
-          más abajo.
-        </p>
-
-        <h2 className="text-2xl font-semibold mb-6">
-          Cambios en la Política de Privacidad
-        </h2>
-        <p className="mb-6">
-          Podemos actualizar esta Política de Privacidad para reflejar cambios
-          en nuestras prácticas. Publicaremos cualquier cambio en nuestro sitio
-          web y le notificaremos sobre actualizaciones importantes.
+          En la medida máxima permitida por la ley, Veo S.A. no será responsable
+          por ningún daño directo, indirecto, incidental, especial o consecuente
+          que surja del uso o incapacidad para usar nuestro sitio web, incluso
+          si hemos sido informados de la posibilidad de dichos daños. Su uso del
+          sitio web es bajo su propio riesgo.
         </p>
 
         <h2 className="text-2xl font-semibold mb-6">Contacto</h2>
         <p className="mb-6">
-          Si tiene preguntas sobre esta Política de Privacidad o sobre cómo
-          manejamos su información personal, contáctenos en{" "}
+          Si tiene alguna pregunta sobre estos Términos y Condiciones, por
+          favor, contáctenos a través del siguiente correo electrónico:{" "}
           <a
             href="mailto:info@veo.com"
             className="text-blue-400 hover:underline"
@@ -104,4 +108,4 @@ const PrivacyPage = () => {
   );
 };
 
-export default PrivacyPage;
+export default TermsPage;
