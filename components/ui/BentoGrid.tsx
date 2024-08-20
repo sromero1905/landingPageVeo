@@ -78,7 +78,7 @@ export const BentoGridItem = ({
           "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
       }}
     >
-      <div className={`${id === 6 && "flex justify-center"} h-full`}>
+      <div className="relative w-full h-full">
         <div className="w-full h-full absolute">
           {img && (
             <img
@@ -93,10 +93,13 @@ export const BentoGridItem = ({
             />
           )}
         </div>
+        {id === 6 && (
+          <div className="absolute inset-0 bg-black bg-opacity-30"></div> // Overlay oscuro menos intenso
+        )}
         <div
           className={`absolute right-0 -bottom-5 ${
             id === 5 && "w-full opacity-80"
-          } `}
+          }`}
         >
           {spareImg && (
             <img
@@ -106,11 +109,6 @@ export const BentoGridItem = ({
             />
           )}
         </div>
-        {id === 6 && (
-          <BackgroundGradientAnimation>
-            <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl"></div>
-          </BackgroundGradientAnimation>
-        )}
 
         <div
           className={cn(
@@ -166,14 +164,6 @@ export const BentoGridItem = ({
               >
                 <Lottie options={defaultOptions} height={220} width={400} />
               </div>
-
-              <MagicButton
-                title={copied ? "Email is Copied!" : "Copy my email address"}
-                icon={<IoCopyOutline />}
-                position="left"
-                handleClick={handleCopy}
-                otherClasses="!bg-[#2D2D2D]"
-              />
             </div>
           )}
         </div>
