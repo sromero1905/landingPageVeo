@@ -5,7 +5,7 @@ import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 
 const Hero = () => {
   return (
-    <div className="pb-20 pt-36 relative">
+    <div className="pb-20 pt-36 relative mb-20">
       <div>
         {/* Adjusted Spotlight components */}
         <Spotlight
@@ -24,9 +24,9 @@ const Hero = () => {
         {/* Match the rounded corners */}
       </div>
 
-      <div className="flex justify-center relative mt-40 z-10">
+      <div className="flex justify-center relative mt-28 md:mt-40 z-10">
         {" "}
-        {/* Increased mt-40 for more space */}
+        {/* Cambié mt-32 a mt-28 */}
         <div className="max-w-[87vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           <p className="uppercase tracking-widest text-sm md:text-base lg:text-lg text-center text-blue-100 whitespace-nowrap">
             Verificador Externa de Obra
