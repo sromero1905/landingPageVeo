@@ -23,8 +23,8 @@ const TermsPage = () => {
       <main className="flex-grow container mx-auto px-6 py-12">
         <h2 className="text-2xl font-semibold mb-6">Introducción</h2>
         <p className="mb-6">
-          Estos Términos y Condiciones ("Términos") describen las reglas y
-          regulaciones para el uso de nuestro sitio web y servicios
+          Estos Términos y Condiciones (&quot;Términos&quot;) describen las
+          reglas y regulaciones para el uso de nuestro sitio web y servicios
           proporcionados por Veo S.A. Al acceder a este sitio web, usted acepta
           estar sujeto a estos Términos. Si no está de acuerdo con alguno de los
           términos aquí expuestos, le pedimos que no utilice nuestro sitio web.
