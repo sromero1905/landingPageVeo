@@ -1,6 +1,6 @@
-# **VEO (Verificadora Externa de Obra)**
+# **Verificador Externa de Obra**
 
-![VEO](https://via.placeholder.com/1200x300.png?text=VEO+%28Verificadora+de+Obra+Externa%29)
+![Verificador Externa de Obra](https://via.placeholder.com/1200x300.png?text=Verificador+Externa+de+Obra)
 
 [![Build Status](https://img.shields.io/badge/Build-Status-green)](https://github.com/tu-usuario/veo/actions)
 [![License](https://img.shields.io/badge/License-MIT-blue)](LICENSE)
@@ -13,7 +13,7 @@
 
 ## **Descripción del Proyecto**
 
-**VEO (Verificadora de Obra Externa)** es una aplicación web desarrollada para facilitar la gestión y verificación de obras externas en proyectos de construcción. Este proyecto demuestra mi habilidad para crear aplicaciones robustas y eficientes, utilizando las últimas tecnologías para asegurar la calidad y el cumplimiento normativo en el sector de la construcción.
+**Verificador Externa de Obra** es una aplicación web desarrollada para facilitar la gestión y verificación de obras externas en proyectos de construcción. Este proyecto demuestra mi habilidad para crear aplicaciones robustas y eficientes, utilizando las últimas tecnologías para asegurar la calidad y el cumplimiento normativo en el sector de la construcción.
 
 ---
 
