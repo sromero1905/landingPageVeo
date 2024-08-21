@@ -13,7 +13,7 @@ const TermsPage = () => {
           <h1 className="text-3xl font-bold">Términos y Condiciones</h1>
           <button
             onClick={() => router.back()}
-            className="px-6 py-3 bg-gray-200 text-gray-800 rounded-lg hover:bg-gray-300 transition duration-300 ease-in-out shadow-md"
+            className="px-4 py-2 bg-gray-800 text-white rounded-lg border border-gray-600 hover:bg-gray-700 transition duration-300 ease-in-out shadow-md focus:outline-none focus:ring-2 focus:ring-gray-500"
           >
             Volver
           </button>
