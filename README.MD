@@ -1,4 +1,4 @@
-# **VEO (Verificadora de Obra Externa)**
+# **VEO (Verificadora Externa de Obra)**
 
 ![VEO](https://via.placeholder.com/1200x300.png?text=VEO+%28Verificadora+de+Obra+Externa%29)
 
