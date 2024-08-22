@@ -29,7 +29,7 @@ const Hero = () => {
         {/* Cambié mt-32 a mt-28 */}
         <div className="max-w-[87vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           <p className="uppercase tracking-widest text-sm md:text-base lg:text-lg text-center text-blue-100 whitespace-nowrap">
-            Verificador Externa de Obra
+            Verificadora Externa de Obra
           </p>
 
           <TextGenerateEffect
