@@ -28,17 +28,17 @@ const Hero = () => {
         {" "}
         {/* Cambié mt-32 a mt-28 */}
         <div className="max-w-[87vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
-          <p className="uppercase tracking-widest text-sm md:text-base lg:text-lg text-center text-blue-100 whitespace-nowrap">
+          <h1 className="uppercase tracking-widest text-xs md:text-sm lg:text-base text-center text-blue-100 whitespace-nowrap">
             Verificadora Externa de Obra
-          </p>
+          </h1>
 
           <TextGenerateEffect
-            words="Transforming Concepts into Seamless User Experiences"
+            words="Precisión en Verificación para Inmuebles y Obras de Alto Nivel"
             className="text-center text-[32px] md:text-4xl lg:text-5xl"
           />
-          <p className="text-center md:tracking-wider mb-4 text-sm md:text-base lg:text-xl">
+          <h2 className="text-center md:tracking-wider mb-4 text-sm md:text-base lg:text-xl">
             Asegurando Calidad y Seguridad en Cada Proyecto
-          </p>
+          </h2>
         </div>
       </div>
     </div>

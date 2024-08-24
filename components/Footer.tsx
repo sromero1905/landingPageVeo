@@ -35,7 +35,7 @@ export default function Footer() {
                 info@veo.com
               </a>
             </div>
-            <p className="text-sm text-gray-500 ml-4">
+            <p className="text-sm text-gray-500 ml-2">
               Copyright &copy; 2024{" "}
               <Link
                 href="/"

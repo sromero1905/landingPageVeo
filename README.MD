@@ -33,7 +33,7 @@
 - **Estilos:** CSS-in-JS / TailwindCSS
 - **Herramientas:** Webpack, Babel, ESLint
 
----
+
 
 ## **Instalación y Ejecución**
 
@@ -53,9 +53,3 @@ npm install
 # Inicia el servidor de desarrollo para el frontend
 npm start
 
-# Navega al directorio del backend
-cd ../backend
-npm install
-
-# Inicia el servidor de desarrollo para el backend
-npm start
