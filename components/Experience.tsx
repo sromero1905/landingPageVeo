@@ -6,8 +6,8 @@ const Experience = () => {
   return (
     <div className="py-20 w-full">
       <h1 className="heading" id="work">
-        We optimize your Project with
-        <span className="text-gray-400"> VEO</span>
+        Servicios de <span className="text-gray-400"> Verificación</span> y Auditoría
+        
       </h1>
 
       <div className="w-full mt-12 grid lg:grid-cols-4 grid-cols-1 gap-10">

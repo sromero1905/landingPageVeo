@@ -13,7 +13,7 @@ export const gridItems = [
   },
   {
     id: 2,
-    title: "I'm very flexible with time zone communications",
+    title: "Consultoría en Sostenibilidad",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
@@ -23,8 +23,8 @@ export const gridItems = [
   },
   {
     id: 3,
-    title: "Verificación precisa",
-    description: "Control en cada etapa.",
+    title: "Análisis de Mercado",
+    description: "Oportunidades y tendencias.",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-center",
@@ -32,14 +32,15 @@ export const gridItems = [
     spareImg: "",
   },
   {
-    id: 4,
-    title: "Experiencia en Evaluación de Inmuebles",
-    description: "",
-    className: "lg:col-span-2 md:col-span-3 md:row-span-1",
-    imgClassName: "",
-    titleClassName: "justify-start",
-    img: "/image.png",
-  },
+  id: 4,
+  title: "Experiencia en Evaluación de Inmuebles",
+  description: "",
+  className: "lg:col-span-2 md:col-span-3 md:row-span-1",
+  imgClassName: "",
+  titleClassName: "justify-start text-sm font-light", 
+  img: "/image.png",
+},
+
 
   {
     id: 5,
@@ -136,7 +137,7 @@ export const testimonials = [
 export const workExperience = [
   {
     id: 1,
-    title: "Revisión de Planes",
+    title: "Revisión de Planos",
     desc: "Analizamos los planos y documentos para garantizar precisión y conformidad con las normativas.",
     className: "md:col-span-2",
     thumbnail: "/building-line.svg",
