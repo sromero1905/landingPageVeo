@@ -4,7 +4,7 @@ import { TextGenerateEffect } from "./ui/TextGenerateEffect";
 
 const Hero = () => {
   return (
-    <div className="pb-20 pt-36 relative mb-20">
+    <div className="relative pb-20 pt-36 mb-20 lg:mb-60"> {/* Ajustar margen inferior para pantallas grandes */}
       <div>
         {/* Adjusted Spotlight components */}
         <Spotlight
@@ -19,13 +19,10 @@ const Hero = () => {
         style={{ backgroundImage: "url('/background.jpg')" }}
       >
         {/* Overlay with Filter */}
-        <div className="absolute inset-0 bg-black opacity-60 rounded-2xl"></div>{" "}
-        {/* Match the rounded corners */}
+        <div className="absolute inset-0 bg-black opacity-60 rounded-2xl"></div> {/* Match the rounded corners */}
       </div>
 
       <div className="flex justify-center relative mt-28 md:mt-40 z-10">
-        {" "}
-        {/* Cambié mt-32 a mt-28 */}
         <div className="max-w-[87vw] md:max-w-2xl lg:max-w-[60vw] flex flex-col items-center justify-center">
           <h1 className="uppercase tracking-widest text-xs md:text-sm lg:text-base text-center text-blue-100 whitespace-nowrap">
             Verificadora Externa de Obra

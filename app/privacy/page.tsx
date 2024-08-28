@@ -83,10 +83,10 @@ const PrivacyPolicyPage = () => {
           Privacidad, por favor, contáctenos a través del siguiente correo
           electrónico:{" "}
           <a
-            href="mailto:info@veo.com"
+            href="mailto:info@veosa.com.ar"
             className="text-blue-400 hover:underline"
           >
-            info@veo.com
+            info@veosa.com.ar
           </a>
           .
         </p>

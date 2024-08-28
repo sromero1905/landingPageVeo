@@ -28,11 +28,11 @@ export default function Footer() {
             <div className="flex items-center space-x-2">
               <p className="text-sm text-gray-500">Contacto:</p>
               <a
-                href="mailto:info@veo.com"
+                href="mailto:info@veosa.com.ar"
                 className="text-sm text-gray-500 hover:text-gray-100 transition duration-300 ease-in-out"
                 aria-label="Contact"
               >
-                info@veo.com
+                info@veosa.com.ar
               </a>
             </div>
             <p className="text-sm text-gray-500 ml-2">
@@ -44,19 +44,23 @@ export default function Footer() {
                 Veo S.A
               </Link>
             </p>
+
           </div>
         </div>
 
         {/* Social Media Icons */}
-        <div className="flex space-x-6 mt-4 justify-center">
+       <div className="flex space-x-6 mt-4 justify-center">
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/company/veo-sa"
             className="hover:text-gray-100 transition duration-500 ease-in-out"
             aria-label="LinkedIn"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <FaLinkedinIn className="h-10 w-10 rounded-full border border-gray-700 p-2 hover:bg-gray-700" />
           </a>
         </div>
+
       </div>
     </footer>
   );

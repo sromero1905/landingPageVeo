@@ -45,7 +45,7 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
-  const leftLists = ["Calidad", "Seguridad", "Normativas"];
+  const leftLists = ["Calidad", "Seguridad", "Normativas","Verificacion"];
   const rightLists = ["Inspección", "Cumplimiento", "Evaluación"];
 
   const [copied, setCopied] = useState(false);
@@ -60,7 +60,7 @@ export const BentoGridItem = ({
   };
 
   const handleCopy = () => {
-    const text = "info@veo.com";
+    const text = " info@veosa.com.ar"
     navigator.clipboard.writeText(text);
     setCopied(true);
   };

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, ChangeEvent, FormEvent } from "react";
+import emailjs from 'emailjs-com';
 
 interface FormData {
   name: string;
@@ -24,6 +25,7 @@ const ContactForm: React.FC = () => {
   const [errors, setErrors] = useState<FormErrors>({});
   const [isSubmitted, setIsSubmitted] = useState<boolean>(false);
   const [isSending, setIsSending] = useState<boolean>(false);
+  const [sendError, setSendError] = useState<string | null>(null);
 
   const handleChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -45,14 +47,27 @@ const ContactForm: React.FC = () => {
     e.preventDefault();
     if (validate()) {
       setIsSending(true);
-      // Simulate form submission
-      setTimeout(() => {
+      setSendError(null); // Reset error message
+      try {
+        await emailjs.send(
+          process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+          process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+          {
+            user_name: formData.name,
+            user_email: formData.email,
+            message: formData.message,
+          },
+          process.env.NEXT_PUBLIC_EMAILJS_USER_ID!
+        );
         setIsSubmitted(true);
         setFormData({ name: "", email: "", message: "" });
         setErrors({});
+      } catch {
+        setSendError("Hubo un error al enviar el mensaje. Por favor, inténtalo de nuevo más tarde.");
+      } finally {
         setIsSending(false);
-        setTimeout(() => setIsSubmitted(false), 3000); // Hide message after 3 seconds
-      }, 2000); // Simulate a delay for the form submission
+        setTimeout(() => setIsSubmitted(false), 3000); // Hide success message after 3 seconds
+      }
     }
   };
 
@@ -63,6 +78,11 @@ const ContactForm: React.FC = () => {
         {isSubmitted && (
           <div className="mb-4 p-4 bg-green-100 text-green-800 rounded-lg">
             ¡Gracias por tu mensaje! Nos pondremos en contacto contigo pronto.
+          </div>
+        )}
+        {sendError && (
+          <div className="mb-4 p-4 bg-red-100 text-red-800 rounded-lg">
+            {sendError}
           </div>
         )}
         <form onSubmit={handleSubmit} className="space-y-6">
